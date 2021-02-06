@@ -1,0 +1,67 @@
+{
+  "name": "sfcc-cartridge-diff",
+  "version": "1.0.0",
+  "description": "SFCC Cartridge Diff Tool",
+  "homepage": "https://github.com/redvanworkshop/sfcc-cartridge-diff#readme",
+  "license": "MIT",
+  "main": "./bin/cli.js",
+  "bin": {
+    "sfcc-diff": "./bin/cli.js"
+  },
+  "engines": {
+    "node": ">=11.6.0"
+  },
+  "keywords": [
+    "cartridge",
+    "cli",
+    "commerce-cloud",
+    "demandware",
+    "diff",
+    "salesforce",
+    "sfcc"
+  ],
+  "contributors": [
+    {
+      "name": "Peter Schmalfeldt",
+      "email": "peter@redvanworkshop.com",
+      "url": "https://redvanworkshop.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redvanworkshop/sfcc-cartridge-diff.git"
+  },
+  "bugs": {
+    "url": "https://github.com/redvanworkshop/sfcc-cartridge-diff/issues"
+  },
+  "scripts": {
+    "test": "npm run -s test:lint && npm run -s test:unit",
+    "test:unit": "jest",
+    "test:lint": "eslint --ext .js ./ --fix && echo '\n【ツ】CODE PERFECTION !!!\n'"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint . --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^2.4.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^8.2.0",
+    "minimist": "^1.2.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "dir-compare": "^3.0.0",
+    "ora": "^5.3.0",
+    "prompts": "^2.4.0",
+    "yargs": "^13.2.4"
+  }
+}
