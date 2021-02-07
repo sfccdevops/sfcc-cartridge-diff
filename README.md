@@ -3,7 +3,7 @@
 SFCC Cartridge Diff Tool
 ---
 
-> Command Line Tool for Salesforce Commerce Cloud Cartridge Compare
+> Command Line Tool for Salesforce Commerce Cloud Cartridge Compare.  SFCC Cartridge Diff Tool.  Working with SFCC Cartridge overrides just got easier:  Compare client cartridge against other cartridges, Generate diffs between override files & Filter using local git changes.
 
 ![demo](https://red-van-workshop.s3.us-east-1.amazonaws.com/sfcc-cartridge-diff.gif?v=1.1.0)
 
@@ -109,12 +109,16 @@ sfcc-diff -c app_client_name -j
 
 #### Comparing Client Cartridge to Specific Cartridge and Generate Diff:
 
+> Want to actually see the changes between cartridge files? Just pass in a the Diff option and it will render it in your terminal window.
+
 ```bash
 sfcc-diff --cartridge app_client_name --include storefront-reference-architecture --diff
-sfcc-diff -c app_client_name -i storefront-reference-architecture -d ksdiff
+sfcc-diff -c app_client_name -i storefront-reference-architecture -d
 ```
 
 #### Comparing Client Cartridge to Specific Cartridge and Generate Diff in External App:
+
+> Want to use an existing Diff Tool to generate the diff instead of displaying it in your terminal window? Just pass in the name of a tool you already have configured with git.
 
 ```bash
 sfcc-diff --cartridge app_client_name --include storefront-reference-architecture --diff=ksdiff
