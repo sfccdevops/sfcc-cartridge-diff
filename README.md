@@ -55,6 +55,7 @@ Name          | Param             | Alias | Definition
 Cartridge     | `--cartridge`     | `-c`  | Source Cartridge
 Diff          | `--diff`          | `-d`  | Show Full Diff
 Exclude       | `--exclude`       | `-e`  | List of Cartridges to Exclude
+Filter        | `--filter`        | `-f`  | Filter Results for Match
 Include       | `--include`       | `-i`  | List of Cartridges to Include
 Junk Only     | `--junk-only`     | `-j`  | Junk Files Only
 Modified Only | `--modified-only` | `-m`  | Modified Files Only
@@ -105,6 +106,15 @@ sfcc-diff -c app_client_name -m
 ```bash
 sfcc-diff --cartridge app_client_name --junk-only
 sfcc-diff -c app_client_name -j
+```
+
+#### Comparing Client Cartridge to All Cartridges and Filtering for ISML Files:
+
+> If you want to limit the results to just what matches a filter, you can use the `--filter` flag.  This will match on the entire relative URL, not just the file name.
+
+```bash
+sfcc-diff --cartridge app_client_name --filter .isml
+sfcc-diff -c app_client_name -f .isml
 ```
 
 #### Comparing Client Cartridge to Specific Cartridge and Generate Diff:

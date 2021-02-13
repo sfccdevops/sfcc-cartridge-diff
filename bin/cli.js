@@ -27,6 +27,11 @@ const cli = yargs
       describe: 'List of Cartridges to Exclude',
       type: 'array'
     },
+    filter: {
+      alias: 'f',
+      describe: 'Filter Results for Match',
+      type: 'string'
+    },
     include: {
       alias: 'i',
       describe: 'List of Cartridges to Include',
@@ -49,6 +54,8 @@ const cli = yargs
   .example('sfcc-diff -c app_client_name --modified-only', 'Use Git Commit for Compare')
   .example('sfcc-diff -c app_client_name --junk-only', 'Just list Junk Files')
   .example('sfcc-diff -c app_client_name -m -d ksdiff', 'Modified Only and Diff')
+  .example('sfcc-diff -c app_client_name -f .isml', 'Filter for ISML files')
+  .example('sfcc-diff -c app_client_name -f common.properties', 'Filter for Specific File')
   .example('sfcc-diff -c app_client_name -i rvw_autobahn_core', 'Compare Two Cartridges')
   .updateStrings({
     'Options:': chalk.cyan('Options:\n'),
