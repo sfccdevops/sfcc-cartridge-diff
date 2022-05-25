@@ -2,7 +2,7 @@
   "name": "sfcc-cartridge-diff",
   "version": "1.1.0",
   "description": "SFCC Cartridge Diff Tool",
-  "homepage": "https://github.com/redvanworkshop/sfcc-cartridge-diff#readme",
+  "homepage": "https://github.com/sfccdevops/sfcc-cartridge-diff#readme",
   "license": "MIT",
   "main": "./bin/cli.js",
   "bin": {
@@ -23,16 +23,16 @@
   "contributors": [
     {
       "name": "Peter Schmalfeldt",
-      "email": "peter@redvanworkshop.com",
-      "url": "https://redvanworkshop.com"
+      "email": "me@peterschmalfeldt.com",
+      "url": "https://peterschmalfeldt.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redvanworkshop/sfcc-cartridge-diff.git"
+    "url": "git+https://github.com/sfccdevops/sfcc-cartridge-diff.git"
   },
   "bugs": {
-    "url": "https://github.com/redvanworkshop/sfcc-cartridge-diff/issues"
+    "url": "https://github.com/sfccdevops/sfcc-cartridge-diff/issues"
   },
   "scripts": {
     "test": "npm run -s test:lint && npm run -s test:unit",

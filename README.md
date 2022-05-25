@@ -1,11 +1,11 @@
-![Logo](https://red-van-workshop.s3.us-east-1.amazonaws.com/logo.png "Logo")
+![Logo](https://sfccdevops.s3.amazonaws.com/logo-128.png "Logo")
 
 SFCC Cartridge Diff Tool
 ---
 
 > Command Line Tool for Salesforce Commerce Cloud Cartridge Compare.  SFCC Cartridge Diff Tool.  Working with SFCC Cartridge overrides just got easier:  Compare client cartridge against other cartridges, Generate diffs between override files & Filter using local git changes.
 
-![demo](https://red-van-workshop.s3.us-east-1.amazonaws.com/sfcc-cartridge-diff.gif?v=1.1.0)
+![demo](https://sfccdevops.s3.amazonaws.com/sfcc-cartridge-diff.gif)
 
 
 Introduction
@@ -33,7 +33,7 @@ npm install -g sfcc-cartridge-diff
 #### Install via Clone
 
 ```bash
-git clone https://github.com/redvanworkshop/sfcc-cartridge-diff.git
+git clone https://github.com/sfccdevops/sfcc-cartridge-diff.git
 cd sfcc-cartridge-diff
 npm install -g
 ```
@@ -77,8 +77,8 @@ sfcc-diff -c app_client_name
 > If you only care about a couple of cartridges, you can speed things up by specifying which ones to compare against.
 
 ```bash
-sfcc-diff --cartridge app_client_name --include storefront-reference-architecture,rvw_autobahn_core
-sfcc-diff -c app_client_name -i storefront-reference-architecture,rvw_autobahn_core
+sfcc-diff --cartridge app_client_name --include storefront-reference-architecture,third_party_core
+sfcc-diff -c app_client_name -i storefront-reference-architecture,third_party_core
 ```
 
 #### Comparing Client Cartridge to All Cartridges Except Specific Ones:
@@ -174,3 +174,8 @@ Here are a couple of apps you can use for external diffs, and how to configure t
   trustExitCode = true
   cmd = open -W -a kdiff3 -n --args \"$LOCAL\" \"$REMOTE\" &> /dev/null &
 ```
+
+Disclaimer
+---
+
+> The trademarks and product names of Salesforce®, including the mark Salesforce®, are the property of Salesforce.com. SFCC DevOps is not affiliated with Salesforce.com, nor does Salesforce.com sponsor or endorse the SFCC DevOps products or website. The use of the Salesforce® trademark on this project does not indicate an endorsement, recommendation, or business relationship between Salesforce.com and SFCC DevOps.

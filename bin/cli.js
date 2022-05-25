@@ -56,7 +56,7 @@ const cli = yargs
   .example('sfcc-diff -c app_client_name -m -d ksdiff', 'Modified Only and Diff')
   .example('sfcc-diff -c app_client_name -f .isml', 'Filter for ISML files')
   .example('sfcc-diff -c app_client_name -f common.properties', 'Filter for Specific File')
-  .example('sfcc-diff -c app_client_name -i rvw_autobahn_core', 'Compare Two Cartridges')
+  .example('sfcc-diff -c app_client_name -i third_party_core', 'Compare Two Cartridges')
   .updateStrings({
     'Options:': chalk.cyan('Options:\n'),
     'Examples:': chalk.cyan('Examples:\n')
@@ -69,7 +69,7 @@ const cli = yargs
   .wrap(100)
   .help('help')
   .alias('help', 'h')
-  .epilogue(`${chalk.bold.cyan('Need Help?')} https://github.com/redvanworkshop/sfcc-cartridge-diff`)
+  .epilogue(`${chalk.bold.cyan('Need Help?')} https://github.com/sfccdevops/sfcc-cartridge-diff`)
   .strict()
   .version().argv
 
