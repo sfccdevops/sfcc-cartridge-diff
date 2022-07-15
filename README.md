@@ -24,7 +24,7 @@ Install
 #### Install via NPM
 
 ```bash
-npm install -g sfcc-cartridge-diff
+npm install -g @sfccdevops/sfcc-cartridge-diff
 ```
 
 #### Install via Clone
