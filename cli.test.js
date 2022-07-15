@@ -1,5 +1,5 @@
 // Strip ANSI Colors
-const stripColor = output => {
+const stripColor = (output) => {
   return output.replace(/[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g, '')
 }
 
@@ -15,7 +15,7 @@ it('returns help output', async () => {
   const parser = yargs.command(require('./bin/cli.js'))
 
   // Run the command module with --help as argument
-  const output = await new Promise(resolve => {
+  const output = await new Promise((resolve) => {
     parser.parse('--help', (err, argv, output) => {
       resolve(stripColor(output))
     })

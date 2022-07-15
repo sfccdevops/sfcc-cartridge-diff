@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"difftool",
+			"kdiff3",
+			"ksdiff",
+			"manifestinteractive",
+			"sdterr",
+			"sfccdevops",
+			"sfra",
+			"shortstat"
+		]
+	}
+}

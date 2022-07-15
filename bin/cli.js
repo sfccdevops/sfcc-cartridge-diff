@@ -15,38 +15,38 @@ const cli = yargs
       alias: 'c',
       describe: 'Source Cartridge',
       type: 'string',
-      demandOption: true
+      demandOption: true,
     },
     diff: {
       alias: 'd',
       describe: 'Show Full Diff',
-      type: 'string'
+      type: 'string',
     },
     exclude: {
       alias: 'e',
       describe: 'List of Cartridges to Exclude',
-      type: 'array'
+      type: 'array',
     },
     filter: {
       alias: 'f',
       describe: 'Filter Results for Match',
-      type: 'string'
+      type: 'string',
     },
     include: {
       alias: 'i',
       describe: 'List of Cartridges to Include',
-      type: 'array'
+      type: 'array',
     },
     'junk-only': {
       alias: 'j',
       describe: 'Junk Files Only',
-      type: 'boolean'
+      type: 'boolean',
     },
     'modified-only': {
       alias: 'm',
       describe: 'Modified Files Only',
-      type: 'boolean'
-    }
+      type: 'boolean',
+    },
   })
   .example('sfcc-diff --cartridge app_client_name', 'Run Test on URL')
   .example('sfcc-diff -c app_client_name --diff', 'Generate Diff in Terminal')
@@ -59,7 +59,7 @@ const cli = yargs
   .example('sfcc-diff -c app_client_name -i third_party_core', 'Compare Two Cartridges')
   .updateStrings({
     'Options:': chalk.cyan('Options:\n'),
-    'Examples:': chalk.cyan('Examples:\n')
+    'Examples:': chalk.cyan('Examples:\n'),
   })
   .fail((msg, err, yargs) => {
     yargs.showHelp()

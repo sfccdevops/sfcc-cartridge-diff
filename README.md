@@ -7,7 +7,6 @@ SFCC Cartridge Diff Tool
 
 ![demo](https://sfccdevops.s3.amazonaws.com/sfcc-cartridge-diff.gif)
 
-
 Introduction
 ---
 
@@ -22,7 +21,7 @@ Install
 
 #### Requirements
 
-- [X] [Node v10+](https://nodejs.org/en/download/)
+- [X] [Node v14+](https://nodejs.org/en/download/)
 
 #### Install via NPM
 
@@ -174,6 +173,11 @@ Here are a couple of apps you can use for external diffs, and how to configure t
   trustExitCode = true
   cmd = open -W -a kdiff3 -n --args \"$LOCAL\" \"$REMOTE\" &> /dev/null &
 ```
+
+About the Author
+---
+
+> [Peter Schmalfeldt](https://peterschmalfeldt.com/) is a Certified Senior Salesforce Commerce Cloud Developer with over 20 years of experience building eCommerce websites, providing everything you need to design, develop & deploy eCommerce applications for Web, Mobile & Desktop platforms.
 
 Disclaimer
 ---

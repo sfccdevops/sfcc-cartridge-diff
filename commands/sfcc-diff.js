@@ -15,7 +15,7 @@ const gitChanges = require('../lib/gitChanges')
  * Module Export
  * @param {Object} options CLI Flags
  */
-module.exports = async options => {
+module.exports = async (options) => {
   // Exit if Cartridge is Missing
   if (!options.cartridge) {
     return process.exit()
@@ -72,7 +72,7 @@ module.exports = async options => {
     const confirmDiff = await prompts({
       type: 'confirm',
       name: 'agree',
-      message: `Generate Diffs for ${files.length} files?`
+      message: `Generate Diffs for ${files.length} files?`,
     })
 
     // Check if user changed their mind about generating that many diffs
