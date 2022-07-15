@@ -5,8 +5,6 @@ SFCC Cartridge Diff Tool
 
 > Command Line Tool for Salesforce Commerce Cloud Cartridge Compare.  SFCC Cartridge Diff Tool.  Working with SFCC Cartridge overrides just got easier:  Compare client cartridge against other cartridges, Generate diffs between override files & Filter using local git changes.
 
-![demo](https://sfccdevops.s3.amazonaws.com/sfcc-cartridge-diff.gif)
-
 Introduction
 ---
 
